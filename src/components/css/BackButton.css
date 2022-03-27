@@ -1,0 +1,22 @@
+.back-button {
+  background-color: rgba(0, 93, 151, 0.658);
+  border: none;
+  border-radius: 5px;
+  color: rgb(252, 213, 58);
+  cursor: pointer;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 2rem auto;
+  padding: 0.5rem 0.8rem;
+  position: fixed;
+  bottom: -32px;
+  left: -5px;
+  text-transform: uppercase;
+  transition: 0.2s ease-in-out;
+}
+
+.back-button:hover {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}

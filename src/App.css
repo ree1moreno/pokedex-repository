@@ -3,3 +3,9 @@
   margin: 0;
   padding: 0;
 }
+
+@import './components/css/Header.css';
+@import './components/css/Footer.css';
+@import './components/css/Loading.css';
+@import './components/css/BackButton.css';
+@import './components/css/ScrollToTopButton.css';
