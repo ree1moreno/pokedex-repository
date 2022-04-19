@@ -3,3 +3,11 @@
   margin: 0;
   padding: 0;
 }
+
+@import './pages/css/Main.css';
+
+@import './components/css/Header.css';
+@import './components/css/Loading.css';
+@import './components/css/PokemonCard.css';
+@import './components/css/PokeballButton.css';
+@import './components/css/Footer.css';

@@ -1,0 +1,22 @@
+.loader-container {
+  padding: 5rem;
+}
+
+.loader {
+  background-image: url('../../images/pokeball.png');
+  background-size: cover;
+  margin: auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: spinner 15s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

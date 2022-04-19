@@ -1,0 +1,36 @@
+.button-container {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  width: max-content;
+}
+
+.button-container p {
+  cursor: pointer;
+  font-weight: 700;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.explore-button {
+  background-image: url('../../images/pokebola-fechada.png');
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+}
+
+.explore-button:hover {
+  background-image: url('../../images/pokebola-aberta.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border: none;
+  content: '';
+  color: transparent;
+}
