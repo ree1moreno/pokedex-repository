@@ -10,4 +10,4 @@ Projeto com o objetivo de treinar o que foi aprendido sobre React Hooks.
 
 ## Página
 
-<p>Acesse a <a href="">página</a>.
+<p>Acesse a <a href="https://pokedex-repository.vercel.app/">página</a>.
