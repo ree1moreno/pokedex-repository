@@ -1,15 +1,19 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import PokemonProvider from './context/PokemonProvider';
+import ExploreName from './pages/ExploreName';
+import Explore from './pages/Explore';
 import Main from './pages/Main';
 
 function App() {
   return (
     <PokemonProvider>
       <Routes>
-        <Route exact path="" element={<Main />}/>
+        <Route exact path="/explorar/:name" element={<ExploreName />} />
+        <Route exact path="/explorar" element={<Explore />} />
+        <Route exact path="" element={<Main />} />
       </Routes>
-   </PokemonProvider>
+    </PokemonProvider>
   );
 }
 

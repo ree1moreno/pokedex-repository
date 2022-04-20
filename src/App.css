@@ -5,9 +5,16 @@
 }
 
 @import './pages/css/Main.css';
+@import './pages/css/Explore.css';
+@import './pages/css/ExploreName.css';
 
 @import './components/css/Header.css';
 @import './components/css/Loading.css';
 @import './components/css/PokemonCard.css';
 @import './components/css/PokeballButton.css';
 @import './components/css/Footer.css';
+@import './components/css/ScrollToTopButton.css';
+@import './components/css/Button.css';
+@import './components/css/PokedexCard.css';
+@import './components/css/BackButton.css';
+@import './components/css/PokemonDetails.css';
