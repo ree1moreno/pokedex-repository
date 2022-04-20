@@ -1,0 +1,137 @@
+.poke-container {
+  align-items: center;
+  background-color: rgba(185, 185, 185, 0.137);
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.192);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin: 3rem auto;
+  padding: 2rem;
+  width: 80vw;
+}
+
+.poke-container-title {
+  color: rgb(43, 43, 43);
+  font-size: 2rem;
+  grid-column: 1 / -1;
+  padding: 0.5rem;
+  width: fit-content;
+}
+
+.poke-container-info {
+  align-items: center;
+  align-content: space-between;
+  display: grid;
+  height: 240px;
+  grid-column: 2 / 4;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.poke-container-types {
+  gap: 0.5rem;
+  padding: 0.4rem;
+}
+
+.poke-container-text {
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.137);
+  border-radius: 5px;
+  line-height: 1.5;
+  margin-top: 0.7rem;
+  padding: 1rem 0.4rem;
+  text-indent: 1rem;
+}
+
+.poke-container-text p {
+  color: rgb(43, 43, 43);
+  display: blo;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+}
+
+.poke-container-card {
+  padding: 0.4rem;
+}
+
+.poke-container-card div {
+  align-items: center;
+  height: 25px;
+}
+
+.poke-container-card h3 {
+  margin-right: 10px;
+}
+
+.poke-container-abilities {
+  flex-wrap: wrap;
+}
+
+.poke-container-stats {
+  display: grid;
+  font-size: 1.1rem;
+  gap: 0.4rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1 / -1;
+  justify-items: start;
+  margin-top: 3rem;
+  padding: 8px;
+  width: 100%;
+}
+
+.poke-stats h4 {
+  margin-right: 5px;
+  width: 140px;
+}
+
+.border {
+  border: 1px solid rgba(128, 128, 128, 0.404);
+  border-radius: 5px;
+  width: 170px;
+}
+
+.border span {
+  color: rgb(43, 43, 43);
+  display: block;
+  height: 21px;
+  font-size: small;
+  font-weight: 600;
+  line-height: 150%;
+  text-indent: 4px;
+}
+
+.color {
+  border-radius: 4px 0 0 4px;
+  padding: 0 0.2rem;
+}
+
+.hp {
+  background-color: rgba(10, 236, 2, 0.801);
+}
+
+.defense {
+  background-color: rgb(250, 233, 3);
+}
+
+.attack {
+  background-color: rgba(247, 40, 40, 0.699);
+}
+
+.speed {
+  background-color: rgba(230, 56, 206, 0.637);
+}
+
+.special-defense {
+  background-color: rgba(0, 0, 255, 0.404);
+}
+
+.special-attack {
+  background-color: orange;
+}

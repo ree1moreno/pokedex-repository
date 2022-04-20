@@ -1,12 +1,12 @@
 import React from 'react';
-// import PokemonContext from '../context/PokemonContext';
+import PokemonContext from '../context/PokemonContext';
 import pokeball from '../images/pokeball.png';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Loading from './Loading';
 
 export default function PokedexCard({ list }) {
-  // const navigate = useNavigate();
-  // const { setDetail } = React.useContext(PokemonContext);
+  const navigate = useNavigate();
+  const { setDetail } = React.useContext(PokemonContext);
   const [number, setNumber] = React.useState(18);
   const [card, setCard] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
@@ -57,10 +57,10 @@ export default function PokedexCard({ list }) {
             <div
               className="pokedex-card"
               key={index}
-              // onClick={() => {
-              //   setDetail(pokemon.entry_number);
-              //   navigate(`/explorar/${pokemon.pokemon_species.name}`);
-              // }}
+              onClick={() => {
+                setDetail(pokemon.entry_number);
+                navigate(`/explorar/${pokemon.pokemon_species.name}`);
+              }}
             >
               <div className="header-card">
                 <p>

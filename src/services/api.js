@@ -25,3 +25,8 @@ export const fetchPokemonByName = async (name) => {
   const promise = await axios.get(POKEMON_NAME_URL(name));
   return promise.data;
 };
+
+export const fetchPokemonsDetails = async (url) => {
+  const promise = await axios.get(url);
+  return promise.data;
+};

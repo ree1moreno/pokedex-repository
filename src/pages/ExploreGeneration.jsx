@@ -11,7 +11,7 @@ export default function ExplorarGeracao() {
   const navigate = useNavigate();
   const { limit, setLimit, offset, setOffset } =
     React.useContext(PokemonContext);
-  const [active, setActive] = React.useState(true);
+  // const [active, setActive] = React.useState(true);
   const [list, setList] = React.useState([]);
   const gen = ['1ª', '2ª', '3ª', '4ª', '5ª', '6ª', '7ª', '8ª'];
   console.log(list);

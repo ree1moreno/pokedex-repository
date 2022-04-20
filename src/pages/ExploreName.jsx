@@ -1,6 +1,4 @@
 import React from 'react';
-// import { fetchAllPokemons } from '../../services/api';
-// import PokemonDetails from '../../components/PokemonDetails';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import BackButton from '../components/BackButton';
@@ -15,10 +13,6 @@ export default function ExplorarNome() {
   const [text, setText] = React.useState('');
   const [search, setSearch] = React.useState('');
   const [suggestions, setSuggestions] = React.useState([]);
-
-  // React.useEffect(() => {
-  //   fetchAllPokemons(url).then((result) => setPokemon(result.results));
-  // }, []);
 
   const handleChange = (text) => {
     let matches = [];

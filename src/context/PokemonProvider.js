@@ -8,6 +8,7 @@ export default function PokemonProvider({ children }) {
   const [genList, setGenList] = React.useState([]);
   const [pokemonList, setPokemonList] = React.useState([]);
   const [surprise, setSurprise] = React.useState(null);
+  const [detail, setDetail] = React.useState('');
 
   React.useEffect(() => {
     fetchPokemons(limit, offset).then(({ results }) => setGenList(results));
@@ -27,6 +28,8 @@ export default function PokemonProvider({ children }) {
     setPokemonList,
     surprise,
     setSurprise,
+    detail,
+    setDetail,
   };
 
   return (
