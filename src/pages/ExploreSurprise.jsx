@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import BackButton from '../components/BackButton';
 import Header from '../components/Header';
 import PokemonCard from '../components/PokemonCard';
@@ -16,14 +16,14 @@ export default function ExplorarSurpresa() {
       <div
         className="surprise-area"
         // onClick={() => navigate(`/explorar/${surprise}`)}
-        style={{ width: '80%', cursor: 'pointer', margin: 'auto' }}
+        style={{ width: '70%', cursor: 'pointer', margin: 'auto' }}
       >
         <PokemonCard name={surprise} />
         <div style={{ transform: 'scale(0.9)' }}>
           <PokemonDetails name={surprise} />
         </div>
-        <BackButton />
       </div>
+      <BackButton />
     </div>
   );
 }

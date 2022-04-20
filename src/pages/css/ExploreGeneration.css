@@ -1,0 +1,58 @@
+.gen-buttons {
+  display: grid;
+  gap: 2rem 4rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.gen-buttons p {
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.gen-buttons p:hover {
+  transform: scale(1.2);
+}
+
+.gen-1,
+.gen-2,
+.gen-3,
+.gen-4,
+.gen-5,
+.gen-6,
+.gen-7,
+.gen-8 {
+  border: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+.selected {
+  background-color: rgba(214, 187, 187, 0.158);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 6px 1px rgba(1, 1, 44, 0.692);
+  transform: scale(1.1);
+}
+
+.pokemon-area {
+  display: grid;
+  gap: 4rem 2rem;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 1rem;
+}
+
+.pokemon-border {
+  border: 1px solid rgba(128, 128, 128, 0.096);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.pokemon-border:hover {
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.065);
+  border-radius: 5px;
+}
