@@ -1,0 +1,77 @@
+.filter-title {
+  font-family: 'Arima Madurai', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  padding: 2rem 0 0.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.arrow-icon {
+  animation: arrow 0.7s infinite alternate;
+  cursor: pointer;
+  display: block;
+  margin: 0.7rem auto;
+}
+
+@keyframes arrow {
+  from {
+    transform: translateY(3px);
+  }
+  to {
+    transform: translateY(-3px);
+  }
+}
+
+.close-icon {
+  animation: pulse 1.5s infinite ease-in-out;
+  cursor: pointer;
+  display: block;
+  margin: 0.7rem auto;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.92);
+  }
+
+  70% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(0.92);
+  }
+}
+
+.buttons-container {
+  border-top: 1px solid rgba(0, 0, 0, 0.055);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem auto 2rem;
+  max-width: 80%;
+  padding: 2rem 0 0;
+}
+
+.buttons-container .filter-title {
+  grid-column: 1 / -1;
+}
+
+.subtitle {
+  border-top: 1px solid rgba(0, 0, 0, 0.055);
+  letter-spacing: 4px;
+  font-family: 'Arima Madurai', Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  padding: 2rem 0 1rem;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .buttons-container {
+    grid-template-columns: 1fr;
+  }
+}
