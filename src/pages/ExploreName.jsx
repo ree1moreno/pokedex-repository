@@ -9,7 +9,7 @@ import PokemonDetails from '../components/PokemonDetails';
 
 export default function ExplorarNome() {
   const navigate = useNavigate();
-  const { pokemonList } = React.useContext(PokemonContext);
+  const { pokemonList, setDetail } = React.useContext(PokemonContext);
   const [text, setText] = React.useState('');
   const [search, setSearch] = React.useState('');
   const [suggestions, setSuggestions] = React.useState([]);
@@ -83,8 +83,12 @@ export default function ExplorarNome() {
                   <div
                     className="suggestion-item"
                     key={index}
-                    onClick={() => suggesHandler(item.pokemon_species.name)}
+                    onClick={() => {
+                      suggesHandler(item.pokemon_species.name);
+                      setDetail(item.entry_number);
+                    }}
                   >
+                    {/* <p>{item.entry_number}</p> */}
                     <p>{item.pokemon_species.name}</p>
                     <img
                       src={fixImage(item.pokemon_species.name)}

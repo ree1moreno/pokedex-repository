@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import BackButton from '../components/BackButton';
 import Header from '../components/Header';
 import PokemonCard from '../components/PokemonCard';
@@ -8,13 +8,12 @@ import PokemonContext from '../context/PokemonContext';
 import { fetchPokemons } from '../services/api';
 
 export default function ExplorarGeracao() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const { limit, setLimit, offset, setOffset } =
     React.useContext(PokemonContext);
   // const [active, setActive] = React.useState(true);
   const [list, setList] = React.useState([]);
   const gen = ['1ª', '2ª', '3ª', '4ª', '5ª', '6ª', '7ª', '8ª'];
-  console.log(list);
 
   React.useEffect(() => {
     setLimit(151);
@@ -95,7 +94,7 @@ export default function ExplorarGeracao() {
               <div
                 key={i}
                 className="pokemon-border"
-                onClick={() => navigate(`/explorar/${pokemon.name}`)}
+                // onClick={() => navigate(`/explorar/${pokemon.name}`)}
               >
                 <PokemonCard name={pokemon.name} />
               </div>

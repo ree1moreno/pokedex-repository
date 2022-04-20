@@ -11,11 +11,11 @@ export default function ExplorarPokemon() {
   const { name } = useParams();
   const [info, setInfo] = React.useState(null);
   const [specie, setSpecie] = React.useState(null);
-  const [evolution, setEvolution] = React.useState(null);
+  // const [evolution, setEvolution] = React.useState(null);
 
   const INFO_URL = `https://pokeapi.co/api/v2/pokemon/${detail}`;
   const DETAIL_URL = `https://pokeapi.co/api/v2/pokemon-species/${detail}`;
-  const EVOLUTION_URL = `https://pokeapi.co/api/v2/evolution-chain/${detail}`;
+  // const EVOLUTION_URL = `https://pokeapi.co/api/v2/evolution-chain/${detail}`;
 
   const addZeros = (number) => {
     if (number < 10) return `00${number}`;
@@ -30,9 +30,9 @@ export default function ExplorarPokemon() {
     fetchPokemonsDetails(DETAIL_URL).then((result) => {
       setSpecie(result);
     });
-    fetchPokemonsDetails(EVOLUTION_URL).then((result) => {
-      setEvolution(result);
-    });
+    // fetchPokemonsDetails(EVOLUTION_URL).then((result) => {
+    //   setEvolution(result);
+    // });
   }, []);
 
   return (
@@ -43,7 +43,7 @@ export default function ExplorarPokemon() {
         <div style={{ transform: 'scale(1.2)' }}>
           <PokemonCard name={name} />
         </div>
-        {info && specie && evolution && (
+        {info && specie && (
           <div className="poke-container-info">
             <div className="poke-container-types flex">
               {info.types.map(({ type }) => (
@@ -53,7 +53,7 @@ export default function ExplorarPokemon() {
               ))}
             </div>
             <div className="poke-container-text">
-              <p>{specie.flavor_text_entries[9].flavor_text}</p>
+              <p>{specie.flavor_text_entries[17].flavor_text}</p>
             </div>
             <div className="poke-container-card">
               <div className="poke-container-height flex">
@@ -66,7 +66,11 @@ export default function ExplorarPokemon() {
               </div>
               <div className="poke-container-habitat flex">
                 <h3>Habitat:</h3>
-                <span>{specie.habitat.name}</span>
+                {specie.habitat === null ? (
+                  <span>unkown</span>
+                ) : (
+                  <span>{specie.habitat.name}</span>
+                )}
               </div>
               <div className="poke-container-abilities flex">
                 <h3>Habilidades:</h3>
@@ -81,7 +85,7 @@ export default function ExplorarPokemon() {
             </div>
           </div>
         )}
-        {info && specie && evolution && (
+        {info && specie && (
           <div className="poke-container-stats">
             {info.stats.map((item, i) => (
               <div key={i} className="poke-stats flex">
