@@ -53,7 +53,8 @@ export default function ExplorarPokemon() {
               ))}
             </div>
             <div className="poke-container-text">
-              <p>{specie.flavor_text_entries[17].flavor_text}</p>
+              {/* tentar colocar para procurar ingles */}
+              <p>{specie.flavor_text_entries[11].flavor_text}</p>
             </div>
             <div className="poke-container-card">
               <div className="poke-container-height flex">
