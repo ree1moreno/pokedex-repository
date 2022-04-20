@@ -39,7 +39,7 @@ export default function ExplorarPokemon() {
     <div>
       <Header />
       <div className="poke-container">
-        {/* <h2 className="poke-container-title">{`#${addZeros(detail)}`}</h2> */}
+        <h2 className="poke-container-title">{`#${addZeros(detail)}`}</h2>
         <div style={{ transform: 'scale(1.2)' }}>
           <PokemonCard name={name} />
         </div>
