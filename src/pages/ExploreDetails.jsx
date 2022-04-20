@@ -35,6 +35,13 @@ export default function ExplorarPokemon() {
     // });
   }, []);
 
+  function findEnglishText() {
+    const englishText = specie.flavor_text_entries.filter(
+      (item) => item.language.name === 'en',
+    );
+    return englishText[englishText.length - 1].flavor_text;
+  }
+
   return (
     <div>
       <Header />
@@ -53,8 +60,7 @@ export default function ExplorarPokemon() {
               ))}
             </div>
             <div className="poke-container-text">
-              {/* tentar colocar para procurar ingles */}
-              <p>{specie.flavor_text_entries[11].flavor_text}</p>
+              <p>{findEnglishText()}</p>
             </div>
             <div className="poke-container-card">
               <div className="poke-container-height flex">
