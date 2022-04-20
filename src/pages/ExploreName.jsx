@@ -29,7 +29,6 @@ export default function ExplorarNome() {
       });
     }
     setSuggestions(matches);
-    console.log(suggestions);
     setText(text);
     setSearch('');
   };
