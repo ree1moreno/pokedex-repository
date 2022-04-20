@@ -1,0 +1,156 @@
+.details-area {
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.15rem;
+  margin: 1rem auto 2rem;
+  padding: 2rem;
+  width: 350px;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 1rem;
+}
+
+.details-item {
+  text-align: center;
+  width: 80px;
+}
+
+.details-item > p {
+  margin-bottom: 10px;
+}
+
+.details-item > span {
+  display: block;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 15px;
+}
+
+.abilities-title {
+  text-align: center;
+}
+
+.abilities {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  gap: 10px;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 460px) {
+  .details-area {
+    padding: 1rem;
+    width: 280px;
+  }
+}
+
+@media (max-width: 380px) {
+  .details-area {
+    padding: 1rem;
+    width: 180px;
+  }
+
+  .details {
+    justify-content: center;
+  }
+}
+
+/* TYPES */
+.types-area {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.type {
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+.bug {
+  background-color: rgb(114, 159, 63);
+}
+
+.dark {
+  background-color: rgb(112, 112, 112);
+}
+
+.dragon {
+  background-color: rgb(241, 110, 87);
+}
+
+.electric {
+  background-color: rgb(238, 213, 53);
+}
+
+.fairy {
+  background-color: rgb(253, 185, 233);
+}
+
+.fighting {
+  background-color: rgb(213, 103, 35);
+}
+
+.fire {
+  background-color: rgb(253, 125, 36);
+}
+
+.flying {
+  background-color: rgb(61, 199, 239);
+}
+
+.ghost {
+  background-color: rgb(123, 98, 163);
+}
+
+.grass {
+  background-color: rgb(155, 204, 80);
+}
+
+.ground {
+  background-color: rgb(247, 222, 63);
+}
+
+.ice {
+  background-color: rgb(81, 196, 231);
+}
+
+.normal {
+  background-color: rgb(164, 172, 175);
+}
+
+.poison {
+  background-color: rgb(185, 127, 201);
+}
+
+.psychic {
+  background-color: rgb(243, 102, 185);
+}
+
+.rock {
+  background-color: rgb(163, 140, 33);
+}
+
+.steel {
+  background-color: rgb(158, 183, 184);
+}
+
+.water {
+  background-color: rgb(69, 146, 196);
+}
