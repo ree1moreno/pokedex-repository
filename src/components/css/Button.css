@@ -1,0 +1,27 @@
+.buttons-area button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Arima Madurai', Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  min-height: 60px;
+  min-width: 150px;
+  text-align: center;
+}
+
+.buttons-area:nth-child(odd) {
+  justify-self: end;
+}
+
+.buttons-area:nth-child(even) {
+  justify-self: start;
+}
+
+@media (max-width: 450px) {
+  .buttons-area:nth-child(even),
+  .buttons-area:nth-child(odd) {
+    justify-self: center;
+  }
+}
