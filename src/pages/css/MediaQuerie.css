@@ -37,11 +37,9 @@
   .pokemon-area {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-@media (max-width: 750px) {
   .poke-container-stats {
-    margin-top: 2rem;
+    margin-top: 6rem;
   }
 }
 
@@ -54,6 +52,10 @@
   .poke-container-info {
     justify-items: center;
     margin-top: 2rem;
+  }
+
+  .poke-container-stats {
+    margin-top: 3rem;
   }
 }
 
@@ -81,7 +83,15 @@
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 445px) {
+  .poke-container-card {
+    font-size: 0.825rem;
+  }
+
+  .poke-container-stats {
+    margin-top: 5rem;
+  }
+
   .poke-stats:nth-child(1) {
     margin-top: 1.25rem;
   }
