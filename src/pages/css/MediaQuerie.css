@@ -80,3 +80,9 @@
     width: 290px;
   }
 }
+
+@media (max-width: 415px) {
+  .poke-stats:nth-child(1) {
+    margin-top: 1.25rem;
+  }
+}
